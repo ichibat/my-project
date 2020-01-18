@@ -8,12 +8,20 @@
 </template>
 
 <script>
+// import Axios from "axios";
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  name: "HelloWorld",
+  data() {
+    return {
+      text: null
+    };
+  },
+  methods: {
+    submitClick() {
+      alert(this.text)
+    }
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
